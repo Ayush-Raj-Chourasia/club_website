@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Club - Members</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .members-hero {
+            background: linear-gradient(rgba(44, 62, 80, 0.9), rgba(44, 62, 80, 0.9)),
+                        url('assets/members-bg.jpg') center/cover;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #fff;
+            margin-top: 60px;
+        }
+
+        .members-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+        }
+
+        .members-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .member-card {
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .member-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .member-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .member-info {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .member-name {
+            font-size: 1.2rem;
+            color: #2c3e50;
+            margin-bottom: 0.5rem;
+        }
+
+        .member-role {
+            color: #3498db;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .member-bio {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+
+        .member-social {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .member-social a {
+            color: #3498db;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        .member-social a:hover {
+            color: #2980b9;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #2c3e50;
+        }
+
+        .section-description {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>Coding Club</h1>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="resources.html">Resources</a>
+                <a href="members.html" class="active">Members</a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="members-hero">
+            <div class="hero-content">
+                <h1>Our Team</h1>
+                <p>Meet the passionate individuals behind our Coding Club</p>
+            </div>
+        </section>
+
+        <div class="members-container">
+            <h2 class="section-title">Leadership Team</h2>
+            <p class="section-description">Our dedicated leaders who guide and inspire the club's activities and growth.</p>
+            <div class="members-grid">
+                <div class="member-card">
+                    <img src="assets/member1.jpg" alt="John Doe" class="member-image">
+                    <div class="member-info">
+                        <h3 class="member-name">John Doe</h3>
+                        <p class="member-role">Club President</p>
+                        <p class="member-bio">Senior Computer Science student with a passion for web development and AI.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <img src="assets/member2.jpg" alt="Jane Smith" class="member-image">
+                    <div class="member-info">
+                        <h3 class="member-name">Jane Smith</h3>
+                        <p class="member-role">Vice President</p>
+                        <p class="member-bio">Software Engineering major specializing in mobile app development.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <img src="assets/member3.jpg" alt="Mike Johnson" class="member-image">
+                    <div class="member-info">
+                        <h3 class="member-name">Mike Johnson</h3>
+                        <p class="member-role">Technical Lead</p>
+                        <p class="member-bio">Full-stack developer with expertise in cloud technologies.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">Core Members</h2>
+            <p class="section-description">The talented individuals who contribute to our club's success through various roles and projects.</p>
+            <div class="members-grid">
+                <div class="member-card">
+                    <img src="assets/member4.jpg" alt="Sarah Wilson" class="member-image">
+                    <div class="member-info">
+                        <h3 class="member-name">Sarah Wilson</h3>
+                        <p class="member-role">Events Coordinator</p>
+                        <p class="member-bio">Organizes workshops and coding competitions for club members.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <img src="assets/member5.jpg" alt="Alex Chen" class="member-image">
+                    <div class="member-info">
+                        <h3 class="member-name">Alex Chen</h3>
+                        <p class="member-role">Resource Manager</p>
+                        <p class="member-bio">Curates and maintains our learning resources and documentation.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <img src="assets/member6.jpg" alt="Emily Brown" class="member-image">
+                    <div class="member-info">
+                        <h3 class="member-name">Emily Brown</h3>
+                        <p class="member-role">Community Manager</p>
+                        <p class="member-bio">Fosters engagement and collaboration among club members.</p>
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-github"></i></a>
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Coding Club</h3>
+                <p>Empowering the next generation of developers</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="events.html">Events</a>
+                <a href="resources.html">Resources</a>
+                <a href="members.html">Members</a>
+            </div>
+            <div class="footer-section">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Coding Club. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 
